@@ -24,11 +24,13 @@ export function search() {
       });
 
   document.addEventListener('keydown', function(event) {
-    if (event.key === 'Escape') {
+    const visible = isSearchVisible(wrapper);
+
+    if (event.key === 'Escape' && visible) {
       displaySearch(wrapper, input, false)();
     }
 
-    if (searchOpenKey(event) && !isSearchVisible(wrapper)) {
+    if (searchOpenKey(event) && !visible) {
       event.preventDefault();
       displaySearch(wrapper, input, true)();
     }

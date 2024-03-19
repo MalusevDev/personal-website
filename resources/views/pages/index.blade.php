@@ -1,7 +1,48 @@
 <x-layouts.website>
-    @section('css')
+    <x-slot:css>
         @vite('resources/css/pages/home.css')
-    @endsection
+    </x-slot:css>
+
+    <x-slot:meta>
+        <meta name="description"
+              content="I'm an experienced remote software developer deeply passionate about creating efficient and elegant solutions"/>
+        <meta property="og:title" content="Dušan Malusev"/>
+        <meta property="og:description" content="Dušan's Website"/>
+        <meta property="og:image" content="{{ asset('images/me.jpeg') }}"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="{{ config('app.url') }}"/>
+        <meta name="twitter:card" content="Dušan's Website"/>
+        <meta name="twitter:image" content="{{ asset('images/me.jpeg') }}"/>
+        <meta name="twitter:title" content="Dušan Malusev"/>
+        <meta name="twitter:description"
+              content="I'm an experienced remote software developer deeply passionate about creating efficient and elegant solutions"/>
+        <meta name="author" content="Dušan Malusev"/>
+    </x-slot:meta>
+    <x-slot:structured>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "ProfilePage",
+                "dateCreated": "2023-12-23T12:34:00+01:00",
+                "dateModified": "2024-01-21T15:11:00+01:00",
+                "mainEntity": {
+                    "@type": "Person",
+                    "name": "Dušan Malušev",
+                    "alternateName": "dmalusev",
+                    "identifier": "123475623",
+                    "description": "I'm an experienced remote software developer deeply passionate about creating efficient and elegant solutions. My journey involves honing skills through diverse projects, all crafted within the confines of my remote workspace.",
+                    "image": "https://avatars.githubusercontent.com/u/33778979",
+                    "sameAs": [
+                      "https://github.com/dmalusev",
+                      "https://dev.to/malusev998",
+                      "https://www.linkedin.com/in/malusevd998",
+                      "https://www.reddit.com/user/Back_Professional",
+                      "https://stackoverflow.com/users/8411483/dusan-malusev"
+                    ]
+                }
+            }
+        </script>
+    </x-slot:structured>
     <article class="h-full flex flex-col items-center justify-center text-center">
         <header class="mb-3 flex flex-col items-center">
             <img
@@ -13,9 +54,9 @@
                     src="{{ asset('images/me.jpeg') }}"
             />
             <h1 class="text-4xl font-extrabold">
-                Dusan Malusev
+                Dušan Malušev
             </h1>
-            <h2 class="text-xl text-neutral-500 text-neutral-400">
+            <h2 class="text-xl text-neutral-400">
                 Senior Software Developer
             </h2>
             <div class="mt-1 text-2xl">

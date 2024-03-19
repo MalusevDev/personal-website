@@ -3,10 +3,10 @@
         <div class="home">
             <a rel="me" href="{{ route('index') }}">dusanmalusev.dev</a>
         </div>
-        <label id="menu-button" for="menu-controller" class="block sm:hidden">
+        <label id="menu-button" for="menu-controller">
             <input type="checkbox" id="menu-controller" class="hidden">
             <x-nav-sm-hamburger-menu-icon/>
-            <div id="menu-wrapper" class="sm:menu">
+            <div id="menu-wrapper">
                 <ul>
                     <x-nav-sm-close/>
                     <x-nav-search-button/>

@@ -1,5 +1,5 @@
 <div class="order-first px-0 lg:order-last lg:max-w-xs">
-    <div class="toc  print:hidden lg:sticky lg:top-10">
+    <div class="toc print:hidden lg:sticky lg:top-10">
         <details open="" class="mt-0 overflow-hidden rounded-lg">
             <summary
                     class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-700 text-neutral-100 lg:hidden">

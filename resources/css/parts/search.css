@@ -1,0 +1,31 @@
+#close-search-button {
+    @apply flex items-center justify-center w-8 h-8 text-neutral hover:text-primary-400;
+}
+
+#search-modal {
+    @apply flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg top-20 border-neutral-700 bg-neutral-800;
+}
+
+#search-modal form {
+    @apply flex items-center flex-auto min-w-0;
+}
+
+#search-modal form > div {
+    @apply flex items-center justify-center w-8 h-8 text-neutral-400;
+}
+
+#search-modal header {
+    @apply relative z-10 flex items-center justify-between flex-none px-2;
+}
+
+#search-modal section {
+    @apply flex-auto px-2 overflow-auto;
+}
+
+#search-wrapper {
+    @apply invisible fixed inset-0 z-50 flex h-screen w-screen cursor-default flex-col p-4 backdrop-blur-sm bg-neutral-900/50 sm:p-6 md:p-[10vh] lg:p-[12vh];
+}
+
+#search-query {
+    @apply flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent;
+}

@@ -14,3 +14,9 @@
     @apply dark:hover:text-primary-400;
     @apply will-change;
 }
+
+.profiles {
+    @apply flex;
+    @apply flex-wrap;
+    @apply text-neutral-500;
+}

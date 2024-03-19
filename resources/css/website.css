@@ -1,5 +1,7 @@
 @import 'parts/website-theme.css';
 @import 'parts/header.css';
+@import 'parts/footer.css';
+@import 'parts/search.css';
 
 @config "../../tailwind.website.config.js";
 
@@ -18,6 +20,7 @@ body:has(#menu-controller:checked) {
 
 
 .body {
+    @apply relative flex flex-col grow;
     @apply antialiased;
     @apply flex;
     @apply flex-col;

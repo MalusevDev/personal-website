@@ -1,6 +1,6 @@
-<li class="mb-1 group sm:mb-0 sm:me-7 sm:last:me-0">
+<li class="nav-item">
     <a href="{{ $link }}" title="{{ $title }}">
-        <span class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2">
+        <span class="nav-item-title">
         {{ $title }}
         </span>
     </a>

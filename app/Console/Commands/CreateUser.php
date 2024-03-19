@@ -21,13 +21,7 @@ class CreateUser extends Command implements PromptsForMissingInput
 
     protected $description = 'Create new Application User';
 
-    public function __construct(
-        private readonly Factory $validator,
-    ) {
-        parent::__construct();
-    }
-
-    public function handle(): int
+    public function handle(Factory $validatorFactory): int
     {
         $password = password(
             label: 'What will be user\'s password?',
@@ -36,7 +30,7 @@ class CreateUser extends Command implements PromptsForMissingInput
             hint: 'Minimum 10 characters.',
         );
 
-        $validator = $this->validator->make(
+        $validator = $validatorFactory->make(
             [
                 'name' => $this->argument('name'),
                 'email' => $this->argument('email'),

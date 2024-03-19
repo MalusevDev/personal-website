@@ -1,0 +1,21 @@
+.footer {
+    @apply py-10;
+    @apply print:hidden;
+}
+
+.footer-wrap {
+    @apply flex;
+    @apply items-center;
+    @apply justify-between;
+}
+
+.footer-text {
+    @apply text-sm;
+    @apply text-neutral-400;
+}
+
+.footer-link {
+    @apply hover:underline;
+    @apply hover:decoration-primary-400;
+    @apply hover:text-primary-500;
+}

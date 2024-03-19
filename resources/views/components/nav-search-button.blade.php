@@ -1,7 +1,7 @@
-<li class="mb-1 group sm:mb-0 sm:me-7 sm:last:me-0">
+<li class="group nav-item">
     <button class="search-button" title="Search (/)">
-        <span class="transition-colors group-hover:text-primary-400">
-            <span class="relative inline-block align-text-bottom px-1 icon">
+        <span class="search-icon">
+            <span>
               <svg aria-hidden="true"
                    focusable="false"
                    data-prefix="fas"
@@ -15,6 +15,6 @@
               </svg>
           </span>
         </span>
-        <span class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"></span>
+        <span class="nav-item-title"></span>
     </button>
 </li>

@@ -1,3 +1,11 @@
+#menu-wrapper {
+    @apply sm:menu;
+}
+
+#menu-button {
+    @apply block sm:hidden;
+}
+
 .header {
     @apply py-6;
     @apply font-semibold;
@@ -70,3 +78,45 @@
     @apply md:px-24;
     @apply lg:px-32;
 }
+
+.nav-item {
+    @apply mb-1;
+    @apply sm:mb-0;
+    @apply sm:me-7;
+    @apply sm:last:me-0;
+}
+
+.nav-item-title {
+    @apply decoration-primary-500;
+    @apply group-hover:underline;
+    @apply group-hover:decoration-2;
+    @apply group-hover:underline-offset-2;
+}
+
+.nav-item .search-icon {
+    @apply transition-colors;
+    @apply group-hover:text-primary-400;
+}
+
+.search-icon span {
+    @apply relative ;
+    @apply inline-block;
+    @apply align-text-bottom;
+    @apply px-1;
+    @apply icon;
+}
+
+.nav-icon {
+    @apply cursor-pointer;
+    @apply hover:text-primary-400;
+}
+
+.icon-span {
+    @apply relative;
+    @apply inline-block;
+    @apply align-text-bottom;
+    @apply px-1;
+    @apply icon;
+}
+
+

@@ -1,5 +1,5 @@
 <div class="relative flex flex-col grow">
-    <main id=main-content class=grow>
+    <main id="main-content" class="grow">
         <header><h1 class="mt-0 text-4xl font-extrabold text-neutral">Blog</h1></header>
         <section class="mt-0 flex max-w-full flex-col prose-invert lg:flex-row">
             <div class="min-w-0 min-h-0 max-w-prose grow"></div>
@@ -23,11 +23,17 @@
             </article>
         </section>
         <ul class="flex flex-row mt-8">
-            <li class="mx-1 min-w-[1.8rem] text-center"><span aria-current=page aria-label="Page 1"
-                                                              class="block font-semibold rounded bg-primary-200 text-primary-700 dark:bg-primary-400 dark:text-neutral-800">1</span>
+            <li class="mx-1 min-w-[1.8rem] text-center">
+                <span aria-current=page aria-label="Page 1"
+                      class="block font-semibold rounded bg-primary-200 text-primary-700 dark:bg-primary-400 dark:text-neutral-800">
+                    1
+                </span>
             </li>
-            <li class="mx-1 min-w-[1.8rem] text-center"><a href="/blog/page/2/" class="block rounded hover:bg-primary-600
-                                                           hover:text-neutral" aria-label="Page 2">2</a></li>
+            <li class="mx-1 min-w-[1.8rem] text-center">
+                <a href="/blog/page/2/" class="block rounded hover:bg-primary-600
+                                                           hover:text-neutral" aria-label="Page 2">2
+                </a>
+            </li>
         </ul>
     </main>
 </div>
