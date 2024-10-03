@@ -24,7 +24,7 @@
     "postcss-nesting": "^12.1",
     "pusher-js": "^8.3",
     "tailwindcss": "^3.4",
-    "vite": "^5.2",
+    "vite": "^5.4",
     "vite-plugin-manifest-sri": "^0.2.0",
     "vitest": "^1.5",
     "vitest-github-actions-reporter": "^0.11.1"
